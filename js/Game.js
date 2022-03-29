@@ -33,13 +33,13 @@ class Game {
 
     car1 = createSprite(width / 2 - 50, height - 100);
     car1.addImage("car1", car1_img);
-    car1.scale = 0.07;
+    car1.scale = 0.7;
 
     car1.addImage("blast", blastImage);
 
     car2 = createSprite(width / 2 + 100, height - 100);
     car2.addImage("car2", car2_img);
-    car2.scale = 0.07;
+    car2.scale = 0.7;
 
     car2.addImage("blast", blastImage);
 
@@ -217,22 +217,22 @@ class Game {
 
   showLife() {
     push();
-    image(lifeImage, width / 2 - 130, height - player.positionY - 400, 20, 20);
+    image(lifeImage, width / 2 - 130, height - player.positionY - 200, 20, 20);
     fill("white");
-    rect(width / 2 - 100, height - player.positionY - 400, 185, 20);
+    rect(width / 2 - 100, height - player.positionY - 200, 185, 20);
     fill("#f50057");
-    rect(width / 2 - 100, height - player.positionY - 400, player.life, 20);
+    rect(width / 2 - 100, height - player.positionY - 200, player.life, 20);
     noStroke();
     pop();
   }
 
   showFuelBar() {
     push();
-    image(fuelImage, width / 2 - 130, height - player.positionY - 350, 20, 20);
+    image(fuelImage, width / 2 - 130, height - player.positionY - 150, 20, 20);
     fill("white");
-    rect(width / 2 - 100, height - player.positionY - 350, 185, 20);
+    rect(width / 2 - 100, height - player.positionY - 150, 185, 20);
     fill("#ffc400");
-    rect(width / 2 - 100, height - player.positionY - 350, player.fuel, 20);
+    rect(width / 2 - 100, height - player.positionY - 150, player.fuel, 20);
     noStroke();
     pop();
   }
